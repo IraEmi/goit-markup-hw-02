@@ -1,0 +1,27 @@
+:root {
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color: #2196F3;
+
+}
+
+body {
+    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+    font-family: Roboto;
+}
+
+.logo {
+    Font-family: Raleway;
+    Font-weight: 700;
+    Font-size: 26px;
+    Line-height: 31px;
+    color: var(--accent-color);
+}
+span {
+    color: black;
+}
+
+/* .list{ */
+    /* list-style: none; */
+/* } */
