@@ -1,27 +1,184 @@
+/* Стилі які приміняються до основної сторінки та портфоліо */
 :root {
     --primary-text-color:#757575;
     --title-text-color:#212121;
     --accent-color: #2196F3;
-
 }
 
 body {
     background-color: #FFFFFF;
     color: var(--primary-text-color);
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
 }
 
+/* Стилізація логотипу до основної сторінки та портфоліо*/
 .logo {
     Font-family: Raleway;
     Font-weight: 700;
     Font-size: 26px;
-    Line-height: 31px;
+    Line-height: 1.2;
     color: var(--accent-color);
 }
-span {
+.accent {
+    color: var(--title-text-color);
+}
+ 
+.accent-footer {
     color: black;
 }
 
-/* .list{ */
-    /* list-style: none; */
-/* } */
+/* Стилізація header основної сторінки та портфоліо */
+
+.nav-item {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--accent-color);
+}
+.contact-link, .contact-tel {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+.contact-link:hover,
+.contact-link:focus,
+.contact-tel:hover,
+.contact-tel:focus {
+    color: var(--accent-color);
+}
+            /* СТИЛІЗАЦЯ ОСНОВНОЇ СТОРІНКИ */
+/* Герой */
+.hero-text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.136;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: center; */
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+/* Особености */
+.features-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.features-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/*Чем мы занимаемся*/
+.work-title {
+   color: var(--title-text-color);  
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
+ 
+/* Наша команда */
+.team-title {
+   color: var(--title-text-color);  
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+   letter-spacing: 0.03em 
+}
+ 
+.team-name {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.2;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+   
+}
+/* Стилізація адреси до основної сторінки та портфоліо */
+.address-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.link, .tel {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color), 0.6;
+}
+
+.link:hover,
+.link:focus,
+.tel:hover,
+.tel:focus {
+    color: var(--accent-color);
+}
+/*забираю крапки з ненумерованого стиску  */
+.list, .features-item, 
+.work-img, .team-item,
+.projects-list {
+    list-style: none;
+}
+
+          /*СТИЛІЗАЦІЯ ПОРТФОЛІО */
+/* Фильтр страницы */
+.btn-filter {
+    background-color: #F5F4FA;;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+/* Выполненные проекты */
+.projects-item {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+ .projects-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+ }
