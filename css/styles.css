@@ -3,6 +3,9 @@
     --primary-text-color:#757575;
     --title-text-color:#212121;
     --accent-color: #2196F3;
+    --one-background-color: #FFFFFF;
+    --two-background-color:#2F303A;
+    --tree-background-color: #F5F4FA;
 }
 
 body {
@@ -38,12 +41,12 @@ body {
 }
  
 .accent-footer {
-    color: #FFFFFF;
+    color: var(--one-background-color);
 }
 
 /* Стилізація header основної сторінки та портфоліо */
 .header {
-    background-color: #FFFFFF;
+    background-color:var(--one-background-color);
 }
 .nav-item {
     color: var(--title-text-color);
@@ -80,10 +83,10 @@ body {
 /* ---------------СТИЛІЗАЦЯ ОСНОВНОЇ СТОРІНКИ----------*/
 /* Герой */
 .hero {
-    background-color: #2F303A;
+    background-color:var(--two-background-color);
 }
 .hero-text {
-    color: #FFFFFF;
+    color: var(--one-background-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.136;
@@ -94,7 +97,7 @@ body {
 
 .button {
     background-color: var(--primary-text-color);
-    color: #FFFFFF;
+    color: var(--one-background-color);
     font-weight: 700;
     font-size: 16px;
     font-family: inherit;
@@ -134,7 +137,7 @@ body {
  
 /* Наша команда */
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--tree-background-color);
 }
 
 .team-title {
@@ -164,7 +167,7 @@ body {
 }
 /* Стилізація footer до основної сторінки та портфоліо */
 .footer {
-    background-color:#2F303A ;
+    background-color:var(--two-background-color);
 }
 
 .address {
@@ -194,12 +197,16 @@ body {
     list-style: none;
 }
 
+.decoration {
+    text-decoration: none;
+}
+
 
 
 /*--------------СТИЛІЗАЦІЯ ПОРТФОЛІО----------- */
 /* Фильтр страницы */
 .btn-filter {
-    background-color: #F5F4FA;;
+    background-color:var(--tree-background-color);
     color: var(--title-text-color);
     font-family: inherit;
     font-weight: 500;
@@ -212,11 +219,13 @@ body {
 .btn-filter:hover,
 .btn-filter:focus {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color:var(--one-background-color);
 }
 
-
 /* Выполненные проекты */
+.projects-list {
+    background-color: var(--one-background-color);
+}
 .projects-item {
     color: var(--title-text-color);
     font-weight: 700;
@@ -225,6 +234,7 @@ body {
     letter-spacing: 0.06em;
 }
  .projects-text {
+    color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
